@@ -1,0 +1,451 @@
+/* Mobin Malek Jari (C) - A Kharazmi Project */
+
+/* Default Setting */
+@font-face {
+    font-family: ybFat;
+    src: url(ybFat.woff);
+}
+@font-face {
+    font-family: ybBold;
+    src: url(ybBold.woff);
+}
+
+input , label , p , div , span , button{
+    user-select: none;
+    direction: ltr;
+
+}
+p , span , h1 ,h2 ,h3 ,h4 , h5{
+  direction: rtl;
+}
+label{
+  direction: rtl;
+  font-family: ybBold;
+  border: 2px solid #6b6b6b;
+  padding: 4px 2.2rem;
+  border-radius: 0.4rem;
+}
+body{
+    background: linear-gradient(to bottom right,#ff8000,#ff00ae );
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+header{
+    color: white;
+    text-align: center;
+}
+h1 {
+    font-family: ybFat;
+    font-size: 4.8rem;
+    margin-bottom: 0rem;
+    text-shadow: 4px 4px #9b360e;
+}
+sub{
+    text-shadow: 1px 1px #9b360e;
+    font-family: ybBold;
+}
+footer{
+  font-family: ybBold;
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+}
+span{
+  opacity: 45%;
+  color: white;
+  font-family: ybBold;
+  font-size: 14px;
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 5px 10px 0px 11px;
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  transition: all 0.3s ease;
+
+}
+span:hover{
+  cursor: pointer;
+  opacity: 100%;
+  transition: all 0.3s ease;
+}
+
+h2{
+  font-family: ybFat;
+  color: rgb(11, 2, 25);
+  font-size: 2rem;
+}
+hr{
+  background: linear-gradient(90deg, #ff8000, #ff00ae ,#d000ff);
+  width:5rem;
+  height: 3px;
+  border-radius: 15px;
+  margin-top: -30px;
+  border: none;
+}
+
+h5{
+  font-family: 'ybBold';
+  margin-right: 6px;
+  margin-top: 0px;
+  font-size: 10px;
+}
+section{
+  text-align: center;
+  background-color: #fdf4f6;
+  width: 60%;
+  border-radius: 25px;
+  margin-top: 1rem;
+  box-shadow: 5px 5px 15px #00000065;
+
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem;
+}
+textarea:disabled{
+background-color: white;
+padding: 10px 10px;
+resize: none;
+width: 100%;
+height: 18rem;
+box-shadow: 2px 2px 8px rgb(0 0 0 / 30%);
+border: none;
+font-size: 9px;
+border-radius: 20px
+}
+textarea:focus{
+
+outline: none;
+}
+/* main div */
+.content{
+    box-shadow: 5px 5px 15px #4a1e05;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 5rem;
+    height: 100rem;
+    width: 60%;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 25px;
+}
+/* Input range options */
+input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius : 22px;
+    background: #d000ff;
+
+    transition: all 0.3s ease;
+}
+input::-webkit-slider-thumb:hover{
+    background: #ff8000;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+input::-webkit-slider-thumb:active{
+    cursor: grab;
+}
+input{
+    transition: all 0.4s ease;
+    background-color: #6b6b6b;
+    height: 1px;
+    border-radius: 5px;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 50%;
+    font-family: ybBold;
+}
+
+/* Color input options */
+input[type=color]{
+    box-shadow: 0px 0px 7px #373737;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    width: 50%;
+    border: 0;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 2.6rem;
+    padding: 0;
+}
+input[type=color]:focus{
+    border-radius: 15px;
+    outline: none;
+  }
+  
+  input[type=color]::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+  input[type=color]::-webkit-color-swatch{
+    border: 0;
+    border-radius: 15px;
+  }
+  
+  input[type=color]::-moz-color-swatch,
+  input[type=color]::-moz-focus-inner{
+    border: 0;
+  }
+  
+  input[type=color]::-moz-focus-inner{
+    padding: 0;
+  }
+
+  /* Options for smaller device */
+  @media screen and (min-width : 760px) {
+    h3{
+      font-family: ybFat;
+      font-size: 4rem;
+    }
+    p{
+      text-align: center;
+      font-family: ybBold;
+    }
+  }
+  @media screen and (max-width : 760px) {
+    h3{
+      font-family: ybFat;
+      font-size: 2rem;
+    }
+    p{
+      font-size: 14px;
+      text-align: center;
+      font-family: ybBold;
+    }
+  }
+
+  /* When info show */
+  .info-show{
+    position: fixed;
+    z-index: 8;
+    color: white;
+    background-color: #181818c8;
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+  }
+
+
+/* close info button */
+  .info-close{
+    height: 3rem;
+    margin-top: 2rem;
+    width: 8rem;
+    background-color: #ff00007a;
+    border: none;
+    border-radius: 38px;
+    font-family: 'ybBold';
+    color: white;
+    transition: all 0.2s ease;
+  }
+  .info-close:hover{
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background-color: #ff0000b5;
+  }
+
+  /* When info hide */
+ .info-hide{
+  display: none;
+ }
+
+ /* Swipe area for changing bg */
+ .checkbg{
+  background-color: #fffffff0;
+    right: 19px;
+    top: 0;
+    position: fixed;
+    box-shadow: 2px 2px 2px #00000045;
+    width: 45px;
+    height: 3.3rem;
+    border-radius: 0em 0em 40px 40px;
+ }
+ /* Swipe button setting */
+ .swipe{
+  height: 20px;
+  width: 37px;
+  background-color: #e5e5e5;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.swipe:before{
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background-color: white;
+  border-radius: 50%;
+  left: 8px;
+  top: 5px;
+  transition: 0.3s;
+}
+.swipe:after{
+  position: absolute;
+  font-size: 45px;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  color: #e5e5e5;
+  left: 16px;
+  letter-spacing:0.5px; 
+
+  transition: 0.3s;
+}
+.swipe:checked{
+  background-color: #ff8000;
+}
+.swipe:checked:before{
+  background-color:white;
+  left: 24px;
+}
+.swipe:checked:after{
+  content: "";
+  color: #ff6600;
+}
+
+/* header of result */
+#result{
+  color: rgb(4, 4, 14) !important;
+}
+/* line of result */
+#hr-result{
+  background: rgb(183 0 255);
+}
+/* copy button */
+#copy{
+  transition: all 0.3s ease;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+    margin-top: 1rem;
+    height: 3rem;
+    padding-top: 13px;
+    text-align: center;
+    border-radius: 41px;
+    border: 2px solid rgba(255, 119, 0, 0);
+    background-color: rgb(255 119 0);
+    font-family: 'ybBold';
+    color: white;
+}
+#copy:hover{
+  cursor: pointer;
+  background-color: rgba(255, 119, 0, 0);
+  color: rgb(255 119 0);
+  border: 2px solid rgb(255 119 0);
+}
+/* back at the main page btn */
+.back_btn a{
+  position: fixed;
+    height: 29px;
+    left: 20px;
+    top: 14px;
+    padding: 6px 3px 0px 2px;
+    border-radius: 38px;
+    border: 2px solid white;
+    transition: all 0.3s;
+}
+.back_btn a img {
+  height: 1.4rem;
+}
+.back_btn a:hover{
+  transition: all 0.3s;
+}
+.back_btn p{
+  transition: all 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 1.4rem;
+  left: 45px;
+  top: -2px;
+  position: fixed;
+}
+

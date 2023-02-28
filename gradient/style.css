@@ -1,0 +1,330 @@
+/* Mobin Malek Jari (C) - A Kharazmi Project */
+
+/* Default Setting */
+@font-face {
+    font-family:ybBold ;
+    src: url(ybBold.woff);
+}
+@font-face {
+    font-family:ybFat ;
+    src: url(ybFat.woff);
+}
+p{
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: white;
+  margin-top: -1px;
+  padding-bottom: 4px;
+  padding-top: 6px;
+  border-radius: 0px 0px 3px 3px;
+}
+h5{
+  font-size: 2rem;
+  margin-top: 23px;
+}
+footer{
+  position: fixed;
+  bottom: 1.2rem;
+}
+textarea{
+  margin-top: -14px;
+  font-size: 11px;
+resize: none;
+width: 85%;
+height: 5rem;
+border: 2px solid white;
+border-radius: 3px;
+padding-left: 7px;
+padding-top: 5px;
+font-family: monospace;
+background-color: #ffffff9c;
+color: #0000009e;
+}
+textarea:hover{
+  cursor: text;
+}
+body{
+
+    font-family: ybBold;
+    background: linear-gradient(to bottom right,rgb(255, 119, 0),rgb(200, 5, 161) );
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+header{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Content (Square) and options (inputs) */
+.content{
+    border: 2px solid #ffffff4f;
+    background-color: #ffffffbf;
+    padding: 2rem;
+    height: 18rem;
+    width: 18.3rem;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+
+    -webkit-border: 2px solid #ffffff4f;
+    -webkit-background-color: #ffffffbf;
+    -webkit-padding: 2rem;
+    -webkit-height: 9rem;
+    -webkit-width: 19rem;
+    -webkit-border-radius: 0.5rem;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+
+    -moz-border: 2px solid #ffffff4f;
+    -moz-background-color: #ffffffbf;
+    -moz-padding: 2rem;
+    -moz-height: 9rem;
+    -moz-width: 19rem;
+    -moz-border-radius: 0.5rem;
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+
+    -ms-border: 2px solid #ffffff4f;
+    -ms-background-color: #ffffffbf;
+    -ms-padding: 2rem;
+    -ms-height: 9rem;
+    -ms-width: 19rem;
+    -ms-border-radius: 0.5rem;
+    -ms-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+}
+/* Area of color inputs */
+.color-chooser{
+  margin-top: 1.1rem;
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+/* Inputs options */
+input[type=color]{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    width: 4.5rem;
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 4.5rem;
+    padding: 0;
+    border: 8px solid white;
+}
+input[type=color]:focus{
+    border-radius: 2px;
+    outline: none;
+  }
+  
+  input[type=color]::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+  input[type=color]::-webkit-color-swatch{
+    border: 0;
+    border-radius: 2px;
+  }
+  
+  input[type=color]::-moz-color-swatch,
+  input[type=color]::-moz-focus-inner{
+    border: 0;
+  }
+  
+  input[type=color]::-moz-focus-inner{
+    padding: 0;
+  }
+
+/* Bottom arrows */
+  .arrows-area{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+  }
+  .arrows-area button{
+    margin-left: 7px;
+    margin-right: 7px;
+    transition: all 0.12s;
+    width: 1.9rem;
+    border-radius: 2rem;
+    height: 1.9rem;
+    opacity: 70%;
+    background-color: #ffffff81;border: 2px solid rgba(255, 255, 255, 0.744);
+  }
+  .arrows-area button:hover{
+    cursor: pointer;
+    opacity: 100%;
+    background-color: #ffffffe2;
+  }
+  .arrows-area button img{
+    padding-top: 3px;height: 15px;
+  }
+
+ #arrow-top{
+  transform: rotate(270deg);
+}
+ 
+  #arrow-bottom{
+    transform: rotate(90deg);
+}
+
+  #arrow-left{
+    transform: rotate(180deg);
+  }
+
+ #arrow-bottom-left{
+  transform: rotate(135deg);
+}
+
+  #arrow-bottom-right{
+    transform: rotate(45deg);
+}
+
+  #arrow-top-left{
+    transform: rotate(225deg);
+}
+
+  #arrow-top-right{
+    transform: rotate(316deg);
+}
+
+/* Result area */
+  .code-area{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+
+    .copyButton{
+      border: 2px solid rgba(255, 255, 255, 1);
+      padding: 8px;
+      width: 85%;
+      height: 41px;
+      margin-top: 16px;
+      border-radius: 3px;
+      transition: all 0.4s;
+      opacity: 80%;
+      background: linear-gradient(to left,rgba(255, 119, 0),rgba(200, 5, 161, 0.753));
+      font-family: 'ybBold';
+      color: white;
+
+    }
+    .copyButton:hover{
+      border: 2px solid rgba(255, 255, 255, 1);
+      opacity: 100%;
+      cursor: pointer;
+      transition: all 0.4s;
+    }
+/* content for smaller device */
+    @media screen and (max-width:680px) {
+      .content{
+        width: 16.5rem !important;
+      }
+
+    } 
+
+    /* back at the main page btn */
+.back_btn a{
+  position: fixed;
+    height: 29px;
+    left: 20px;
+    top: 14px;
+    padding: 6px 3px 0px 2px;
+    border-radius: 38px;
+    border: 2px solid white;
+    transition: all 0.3s;
+}
+.back_btn a img {
+  height: 1.4rem;
+}
+.back_btn a:hover{
+  transition: all 0.3s;
+}
+.back_btn h4{
+  transition: all 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 1.4rem;
+  left: 45px;
+  top: -9.5px;
+  position: fixed;
+}

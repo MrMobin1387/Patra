@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>پاترا رادیوزر</title>
+    <link rel="shortcut icon" href="PatraLogo.jpg" type="image/x-icon">
+</head>
+<body>
+
+<!-- Back button -->
+    <div class="back_btn">
+        <h4 id="back_text">بازگشت</h4>
+        <a onmouseover="backHover()" onmouseout="backNotHover()" href="https://mrmobin1387.github.io/patra"><img src="arrow.png" alt="arrow"></a>
+    </div>
+
+<!-- Shape Area (I mean The upper div in page) -->
+    <div class="shape-area">
+        <div class="shape" id="shape"></div>
+        <div class="hint">
+            <h1>پاترا رادیوزر</h1> <br />
+            <sub>شما میتونید تغییرات رو روی شکل اعمال کنید و<br> سپس کد رو به صورت سی اس اس دریافت و روی المنت مورد نظر خودتون اجرا کنید</sub>
+        </div>
+    </div>
+
+<!-- Setting Area -->
+    <div class="content">
+    <div class="content-row-1">
+        <div class="content-column-1">
+            <h3>گوشه بالا راست</h3>
+            <hr>
+            <input id="topLeft" onchange="change()" type="range" min="0" max="350" value="150">
+        </div>
+        <div class="content-column-2">
+            <h3 >گوشه بالا چپ</h3>
+            <hr>
+            <input id="topRight" onchange="change()" type="range" min="0" max="350" value="260">
+        </div>
+    </div> 
+    <div class="content-row-2">
+        <div class="content-column-1">
+            <h3 >گوشه پایین چپ</h3>
+            <hr>
+            <input id="bottomLeft" onchange="change()" type="range" min="0" max="350" value="160">
+        </div>
+        <div class="content-column-2">
+            <h3 >گوشه پایین راست</h3>
+            <hr>
+            <input id="bottomRight" onchange="change()" type="range" min="0" max="350" value="190">
+        </div>
+    </div> 
+    
+    
+    </div>
+
+<!-- Area of code -->
+<div id="codeArea">
+    <p id="codeAreaArrow">^</p>
+    <h5>کد شکل همینجاست!</h5>
+    <textarea id="code" disabled>
+.patra-div{
+    border-radius: 150% 260% 160% 190%;
+}
+    </textarea>
+    <button id="copy" onclick="copy()">کپی</button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

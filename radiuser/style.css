@@ -1,0 +1,552 @@
+/* Mobin Malek Jari (C) - A Kharazmi Project */
+
+
+/* Default Settings */
+
+body{
+    font-family: ybBold;
+    background: linear-gradient(to bottom right,#FF7700,#C805A1 );
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@font-face {
+    font-family:ybBold ;
+    src: url(ybBold.woff);
+}
+@font-face {
+    font-family:ybFat ;
+    src: url(ybFat.woff);
+}
+
+/* setting area */
+.content{
+    border: 2px solid #ffffff4f;
+    background-color: #ffffffbf;
+    padding: 2rem;
+    height: 12.7rem;
+    width: 75%;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+
+    -webkit-border: 2px solid #ffffff4f;
+    -webkit-background-color: #ffffffbf;
+    -webkit-padding: 2rem;
+    -webkit-height: 12rem;
+    -webkit-width: 75%;
+    -webkit-border-radius: 0.5rem;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+
+    -moz-border: 2px solid #ffffff4f;
+    -moz-background-color: #ffffffbf;
+    -moz-padding: 2rem;
+    -moz-height: 12rem;
+    -moz-width: 75%;
+    -moz-border-radius: 0.5rem;
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+
+    -ms-border: 2px solid #ffffff4f;
+    -ms-background-color: #ffffffbf;
+    -ms-padding: 2rem;
+    -ms-height: 12rem;
+    -ms-width: 75%;
+    -ms-border-radius: 0.5rem;
+    -ms-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+}
+
+/* Options for smaller device */
+@media screen and (min-width:680px) {
+    .copyRight{
+      font-weight: 100;
+      font-family: monospace;
+      position: fixed;
+      left: 15px;
+      bottom: 10px;
+      color: #ffffff87;
+      text-decoration: none;
+      opacity: 60%;
+      letter-spacing: .2px;
+      font-size: 10px;
+      user-select: none;
+    }
+    .copyRight:hover{
+        cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  @media screen and (max-width:680px) {
+    .copyRight{
+      font-weight: 100;
+      font-family: monospace;
+      position: fixed;
+      top: 293px;
+      left: 35px;
+      color: #ffffff87;
+      text-decoration: none;
+      opacity: 60%;
+      letter-spacing: .2px;
+      font-size: 10px;
+      user-select: none;
+    }
+    .copyRight:hover{
+        cursor: pointer;
+      text-decoration: underline;
+    }
+  } 
+  /* Shape options  */
+  .shape-area{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    border: 2px solid #ffffff4f;
+    background-color: #ffffffbf;
+    padding: 2rem;
+    height: 12rem;
+    margin-bottom: 36px;
+    margin-top: 24px;
+    width: 75%;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+
+    -webkit-border: 2px solid #ffffff4f;
+    -webkit-background-color: #ffffffbf;
+    -webkit-padding: 2rem;
+    -webkit-border-radius: 0.5rem;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+
+    -moz-border: 2px solid #ffffff4f;
+    -moz-background-color: #ffffffbf;
+    -moz-padding: 2rem;
+    -moz-border-radius: 0.5rem;
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+
+    -ms-border: 2px solid #ffffff4f;
+    -ms-background-color: #ffffffbf;
+    -ms-padding: 2rem;
+    -ms-border-radius: 0.5rem;
+    -ms-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+  }
+
+  /* This is the Text under the shape */
+  .hint{
+    margin-bottom: 2rem;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  h1,h2,h3,h4,h5,p,sub{
+    direction:rtl;
+  }
+
+
+/* Text options for smaller device */
+  @media screen and (min-width:730px) {
+    h1,h2{
+        width: 100%;
+        font-size: 60px;
+        background: linear-gradient(to right, rgb(200 5 161) 0%, rgb(255 119 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: ybFat;
+        font-size: 3rem;
+        margin-bottom: 100px;
+        margin-right: -20px;
+      }
+      p,sub{
+        font-family: ybBold;
+      }
+      sub{
+        color: rgba(20, 20, 20, 0.685);
+        font-size: 12px;
+        margin-top: -122px;
+        margin-right: -19px;
+      }
+      .shape{
+        border-radius: 150% 260% 160% 190%;
+        background: linear-gradient(to bottom right,rgb(255, 119, 0),rgb(200, 5, 161) );
+        width: 10rem;
+        height: 10rem;
+        margin-left: -60px;
+      }
+      #codeArea h5{
+        margin-top: -16px;
+        margin-bottom: 10px;
+        font-family: ybFat;
+        font-size: 3rem;
+      }
+  }
+  @media screen and (max-width:730px) {
+    #codeArea h5{
+      margin-top: -16px;
+      margin-bottom: 10px;
+      font-family: ybFat;
+      font-size: 1.3rem;
+    }
+    h1,h2{
+        width: 100%;
+        font-family: ybFat;
+        font-size: 3rem;
+        margin-bottom: 100px;
+        margin-right: -20px;
+        background: linear-gradient(to right, rgb(200 5 161) 0%, rgb(255 119 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p,sub{
+        font-family: ybBold;
+      }
+      sub{
+        color: rgba(20, 20, 20, 0.685);
+        margin-top: -122px;
+        margin-right: -19px;
+        line-break: auto;
+        font-size: 9.2px;
+      }
+      .shape{
+        border-radius: 150% 260% 160% 190%;
+        background: linear-gradient(to bottom right,rgb(255, 119, 0),rgb(200, 5, 161) );
+        width: 9rem;
+        height: 9rem;
+        margin-left: -16px;
+      }
+    }
+
+
+    /* Inputs setting */
+    input::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        appearance: none;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius : 22px;
+        background: rgb(183, 0, 255);
+    
+        transition: all 0.3s ease;
+    }
+    input::-webkit-slider-thumb:hover{
+        background: rgb(255, 145, 0);
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    input::-webkit-slider-thumb:active{
+        cursor: grab;
+    }
+    input{
+        transition: all 0.4s ease;
+        background-color: rgba(0, 0, 0, 0.368);
+        height: 1px;
+        border-radius: 5px;
+        -webkit-appearance: none;  /* Override default CSS styles */
+        appearance: none;
+        width: 100%;
+        font-family: ybBold;
+    }
+    /* Here i made two area for radius setting to make it looks better */
+    .content-row-1 , .content-row-2{
+        text-align: center;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+.content-row-2{
+    margin-top: 24px;
+}
+    hr{
+        background: linear-gradient(90deg, rgb(255 145 0), rgb(255 0 200) ,rgb(183 0 255));
+        width:5rem;
+        height: 3px;
+        border-radius: 15px;
+        margin-top: -30px;
+        border: none;
+    }
+    .content-column-1 , .content-column-2{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .content-column-1 h3 , .content-column-2 h3{
+        margin-bottom: 34px;
+    }
+    
+
+    .content-column-1 input , .content-column-2 input{
+        margin-top: 12px;
+    }
+
+    /* Area of code setting */
+    #codeArea p{
+      transition: all 0.3s ease;
+      user-select: none;
+      color: rgb(0 0 0 / 60%);
+      font-family: cursive;
+      font-size: 32px;
+      margin-top: -8.7rem;
+
+    }
+    #codeArea p:hover{
+      color: rgb(0 0 0 / 90%);
+      cursor: pointer;
+    }
+
+    #codeArea{
+    user-select: none;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    background-color: #ffffff99;
+    width: 50%;
+    height: 30rem;
+    bottom: -28.2rem;
+    border-radius: 0.8rem;
+    backdrop-filter: blur(2px);
+    transition: 0.6s all ease;
+    }
+    #codeArea:hover{
+      cursor: pointer;
+      transition: 0.3s all ease;
+      background-color: rgba(255, 255, 255, 0.818);
+    }
+
+    #codeArea textarea{
+      resize: none;
+      width: 50%;
+      height: 30%;
+      border-radius: 8px;
+      background: white;
+      border: 1px solid #00000024;
+      padding: 8px 8px;
+      box-shadow: 0px 0px 10px #00000057;
+    }
+    #codeArea button{
+      height: 2.6rem;
+      width: 50%;
+      color: white;
+      font-family: 'ybBold';
+      border: none;
+      border-radius: 6px;
+      box-shadow: 0px 0px 10px rgb(0 0 0 / 37%);
+      margin-top: 10px;
+      background: linear-gradient(to right,#FF7700,#C805A1 );
+      transition: all 0.25s ease;
+    }
+    #codeArea button:hover{
+      cursor: pointer;
+      background: linear-gradient(to right,#FF7700,#C805A1 );
+      transition: all 0.25s ease;
+      filter: brightness(80%);
+    }
+    /* back at the main page btn */
+.back_btn a{
+  position: fixed;
+    height: 29px;
+    left: 20px;
+    top: 14px;
+    padding: 6px 3px 0px 2px;
+    border-radius: 38px;
+    border: 2px solid white;
+    transition: all 0.3s;
+}
+.back_btn a img {
+  height: 1.4rem;
+}
+.back_btn a:hover{
+  transition: all 0.3s;
+}
+.back_btn h4{
+  transition: all 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 1.4rem;
+  left: 45px;
+  top: -9.5px;
+  position: fixed;
+}
+
+/* Hide the back btn in small device */
+@media screen and (max-width: 721px) {
+  .back_btn{
+    display: none;
+  }
+  .back_btn *{
+    display: none;
+  }
+}
+
+/* shape area in small device */
+@media screen and (max-width: 501px) {
+  .shape-area{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: column;
+    -ms-flex-wrap: column;
+    flex-wrap: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 2px solid #ffffff4f;
+    background-color: #ffffffbf;
+    padding: 2rem;
+    height: 25rem;
+    margin-bottom: 36px;
+    margin-top: 24px;
+    width: 75%;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px rgb(0 0 0 / 23%);
+    -webkit-border: 2px solid #ffffff4f;
+    -webkit-background-color: #ffffffbf;
+    -webkit-padding: 2rem;
+    -webkit-border-radius: 0.5rem;
+    -webkit-box-shadow: 3px 3px 5px rgb(0 0 0 / 23%);
+    -moz-border: 2px solid #ffffff4f;
+    -moz-background-color: #ffffffbf;
+    -moz-padding: 2rem;
+    -moz-border-radius: 0.5rem;
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+    -ms-border: 2px solid #ffffff4f;
+    -ms-background-color: #ffffffbf;
+    -ms-padding: 2rem;
+    -ms-border-radius: 0.5rem;
+    -ms-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.23);
+  }
+
+  .hint{
+    text-align: center !important;
+    margin-bottom: 2rem;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  h1,h2{
+    width: 100%;
+    font-size: 60px;
+    background: linear-gradient(to right, rgb(200 5 161) 0%, rgb(255 119 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: ybFat;
+    font-size: 3rem;
+    margin-bottom: 100px;
+    margin-right: 0px;
+  }
+  p,sub{
+    font-family: ybBold;
+  }
+  sub{
+    color: rgba(20, 20, 20, 0.685);
+    font-size: 12px;
+    margin-top: -122px;
+    margin-right: 0px;
+  }
+  #codeArea p{
+    transition: all 0.3s ease;
+    user-select: none;
+    color: rgb(0 0 0) !important;
+    font-family: cursive;
+    font-size: 29px !important;
+    margin-top: -11.7rem !important;
+  }
+}

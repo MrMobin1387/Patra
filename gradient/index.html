@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پاترا گرادینت</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="PatraLogo.jpg" type="image/x-icon">
+</head>
+<body>
+
+<!-- Back button -->
+    <div class="back_btn">
+        <h4 id="back_text">بازگشت</h4>
+        <a onmouseover="backHover()" onmouseout="backNotHover()" href="https://mrmobin1387.github.io/patra"><img src="arrow.png" alt="arrow"></a>
+    </div>
+
+<!-- The Content + Options -->
+    <header>
+        <div class="content">
+            <div class="color-chooser">
+
+                <div>
+                    <input id="color2" type="color" value="#C805A1" onchange="change()">
+                    <p id="color2_text">#C805A1</p>
+                </div>
+
+                <h5>
+                    و
+                </h5>
+
+                <div>
+                    <input id="color1" type="color" value="#FF7700" onchange="change()">
+                    <p id="color1_text">#FF7700</p>
+                </div>
+                </div>
+                <div class="code-area">
+                    <!-- Code area -->
+                    <textarea id="codes" disabled>
+.patra-div{
+    background: linear-gradient(to bottom right,rgb(255, 119, 0),rgb(200, 5, 161) );
+}                   </textarea>
+
+<!-- Copy button -->
+<button class="copyButton" id="copy_btn" onclick="copy()">
+کپی
+</button>
+                </div>
+
+
+
+            </div>
+        </div>
+            <footer>
+                <!-- Bottom direction arrows -->
+                <div class="arrows-area">
+                    <button onclick="dir_top()"><img id="arrow-top" src="pics/arrow_right.png" alt="arrow"></button>
+                    <button onclick="dir_top_right()"><img id="arrow-top-right" src="pics/arrow_right.png" alt="arrow"></button>
+                    <button onclick="dir_right()"><img id="arrow-right" src="pics/arrow_right.png" alt="arrow"></button>
+                    <button onclick="dir_bottom_right()"><img id="arrow-bottom-right" src="pics/arrow_right.png" alt="arrow"></button>
+                    <button onclick="dir_bottom()"><img id="arrow-bottom" src="pics/arrow_right.png" alt="arrow"></button>
+                    <button onclick="dir_bottom_left()"><img id="arrow-bottom-left" src="pics/arrow_right.png" alt="arrow"></button>
+                    <button onclick="dir_left()"><img id="arrow-left" src="pics/arrow_right.png" alt="arrow"></button>
+                    <button onclick="dir_top_left()"><img id="arrow-top-left" src="pics/arrow_right.png" alt="arrow"></button>
+            </footer>
+                </div>
+    </header>
+<script src="script.js"></script>
+</body>
+</html>

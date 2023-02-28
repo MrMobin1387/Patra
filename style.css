@@ -1,0 +1,636 @@
+/* Mobin Malek Jari (C) - A Kharazmi Project */
+
+/* Note:
+
+	set " margin: 0rem 1rem 0 1rem; " for all elements in the page
+    Because We need a space between element and body
+
+    --Don't Use it for navagation bar--
+
+*/
+
+
+
+
+
+/* Default Setting */
+
+@font-face {
+    font-family: ybBold;
+    src: url('generator/ybBold.woff');
+}
+@font-face {
+    font-family: ybFat;
+    src: url('generator/ybFat.woff');
+}
+
+nav {
+    user-select: none;
+    animation: slidedown 3s ease;
+}
+h1 {
+    user-select: none;
+    animation: slidedown 5s ease;
+}
+sub{
+    direction: rtl;
+    user-select: none;
+    animation: slidedown 7s ease;
+}
+section{
+    animation: slidedown 9s ease;
+}
+.whyPatra{
+    animation: slidedown 12s ease;
+}
+
+html,
+body {
+	margin: 0;
+}
+
+* {
+    user-select: none;
+  scroll-behavior: smooth;
+}
+body {
+    scroll-behavior: smooth;
+	font-family: ybBold;
+     background-color: rgb(24, 24, 39); 
+}
+hr{
+    width: 80%;
+    background: linear-gradient(90deg, #ffffff00, white , #ffffff00);
+    border: none;
+    height: 1px;
+    opacity: 30%;
+    animation: width 2s ease-in;
+    display: visible;
+}
+img{
+    user-select: none;
+  }
+
+
+/* Animations */
+@keyframes slidedown {
+    0% {
+      opacity: 0;
+    }
+    
+    5% {
+      opacity: 0;
+      transform: translateY(0.5em);
+    }
+    
+    7% {
+      transform: translateY(-1em);
+    }
+    
+    10% {
+      opacity: 0;
+    }
+    
+    20% {
+      transform: translateY(0);
+      opacity: 100;
+    }
+  }
+
+
+
+/* Navagation Bar */
+.nav-row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 13px;
+    text-align: center;
+    height: 5em;
+    background: linear-gradient(180deg , #424285fe , transparent);
+    color: white;
+    backdrop-filter: blur(1.1px);
+    -ms-backdrop-filter: blur(1.1px);
+    -webkit-backdrop-filter: blur(1.1px);
+    text-decoration: none;
+}
+
+.nav-row-item{
+    text-shadow: 0px 0px 5px #0009;
+	font-size: 1em;
+	color: rgba(255, 255, 255, 0.783);
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+.nav-row-item:hover{
+    text-shadow: 0px 8px 4px rgb(17, 4, 43);
+	transition: all 0.2s ease;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.nav-row-item:last-child:hover{
+	margin-bottom: 0;
+}
+
+/* logo */
+.nav-row-item:last-child img{
+	margin-bottom: 0;
+	opacity: 90%;
+    border-radius: 6px;
+	transition: all 0.3s ease;
+
+}
+
+.nav-row-item:last-child img:hover{
+	margin-bottom: 0;
+	opacity: 100%;
+	transition: all 0.3s ease;
+
+}
+.nav-row-item img{
+	transition: all 0.3s ease;
+	margin-bottom: 0;
+	opacity: 85%;
+	height: 46px;
+}
+
+.nav-row-item:first-child:hover{
+	margin-bottom: 0;
+}
+.nav-row-item:first-child button{
+    background: linear-gradient(to right, #e8096e, #e73032);
+    width: 8rem;
+	margin-top: 0px;
+	transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px #fa58b6;
+}
+.nav-row-item:first-child button:hover{
+    width: 10rem;
+	margin-top: 0px;
+	transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px #8f0424;
+}
+.nav-row-item:first-child button img {
+	height: 15px;
+	margin-bottom: -5px;
+    margin-right: 0px;
+}
+.nav-row-item:first-child:hover{
+    cursor: pointer;
+}
+.item-link:hover{
+    color:#ff4b0a;
+}
+.nav-row-item:first-child button{
+	color: rgba(255, 255, 255, 0.841);
+	font-weight: 100;
+    border: none;
+    padding: 8px 10px 8px 10px;
+	box-shadow: 0px 0px 6px #fa58b600;
+	background-color: #FA58B6;
+    border-radius: 26px;
+	font-family: ybBold;
+    transition: all 0.5s ease;
+    margin-bottom: 0;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+/* Main title > 740px */
+header h1{
+    font-family: ybFat;
+    color: white;
+    font-size: 6rem;
+}
+
+/* Main sub title > 740px */
+sub{
+    color: #a2adff;
+    margin-top: -70px;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+/* 768px (iPad Mini) */ /* This is a Setup for tablet devices */
+@media screen and (min-width:  767px) {
+    .tools-card{
+        width: 14rem;
+        margin-top: 15px;
+        border-radius: 0.9rem;
+        height: 20rem;
+        background-color: #00000087;
+
+        display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+}
+@media screen and (max-width:  768px) {
+    .tools-card{
+        width: 14rem;
+        margin-top: 15px;
+        border-radius: 0.9rem;
+        height: 20rem;
+        background-color: #00000087;
+
+        display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+}
+
+/* Main title is smaller than 740px */
+@media screen and (max-width: 740px) {
+    header h1{
+        font-family: ybFat;
+        color: white;
+        font-size: 2.6rem;
+    }
+sub{
+    color: #ffffffc9;
+    margin-top: -27px;
+    font-size: 12px;
+    margin-bottom: 3rem;
+}
+    .tools-area{
+        margin-bottom: 3rem;
+        width: 100%;
+        margin-top:2rem;
+        margin-bottom: 2rem;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .tools-card{
+        width: 16rem;
+        margin-top: 15px;
+        border-radius: 0.9rem;
+        height: 20rem;
+        background-color: #00000087;
+
+        display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+    .card1{
+        opacity: 80%;
+        transition: all 0.3s ease;
+    }
+    .card2{
+        opacity: 80%;
+        transition: all 0.3s ease;
+    }
+    .card3{
+        opacity: 80%;
+        transition: all 0.3s ease;
+    }
+    
+    .card1:hover{
+        opacity: 100%;
+        transition: all 0.3s ease;
+    }
+    .card2:hover{
+        opacity: 100%;
+        transition: all 0.3s ease;
+    }
+    .card3:hover{
+        opacity: 100% !important;
+        transition: all 0.3s ease;
+    }
+}
+
+/* Header Options */
+header{
+    margin-top: 5rem;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+/* This is a flexarea with 3 cards to choose > 740px */
+.tools-area{
+    margin-bottom: 3rem;
+    width: 100%;
+    margin-top: 1rem;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* These are tools card > 740px */
+.tools-card{
+    width: 16rem;
+    margin-top: 15px;
+    border-radius: 0.9rem;
+    height: 20rem;
+    background-color: #101018;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.tools-card img{
+    height: 16rem;
+    transition: all 0.4s;
+    opacity: 80%;
+}
+.tools-card img:hover{
+    height: 16rem;
+    transition: all 0.4s;
+    opacity: 100%;
+}
+/* Tools Card Options */
+.card-title{
+    text-align: right;
+    height: 5rem;
+    transition: all 0.4s;
+    opacity: 70%;
+    direction: rtl;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(270deg, #ff4b0a, transparent);
+    width: 76%;
+    padding: 0 30px;
+    margin-top: -16px;
+    border-radius: 0 0 0.9rem 0;
+}
+.card-title:hover{
+    width: 76%;
+    padding: 0 30px;
+    text-align: right;
+    height: 5rem;
+    transition: all 0.4s;
+    opacity: 100%;
+    direction: rtl;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(270deg, #ff0a5c, transparent);
+    margin-top: -16px;
+    border-radius: 0 0 0.9rem 0;
+}
+.card-title p{
+    margin-top: 27px;
+    text-decoration: underline !important;
+    user-select: none;
+    text-decoration-color: #b5370c !important;
+}
+.card-arrow{
+    height: 1rem !important;
+    margin-right: 75px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+
+
+
+@media screen and (min-width: 740px) {
+.card1{
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px #0003;
+}
+.card2{
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px #0003;
+}
+.card3{
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px #0003;
+}
+
+.card1:hover{
+    margin-top: -9px !important;
+    transition: all 0.3s ease;
+    box-shadow: 0px 19px 13px #000a;
+}
+.card2:hover{
+    margin-top: -9px !important;
+    transition: all 0.3s ease;
+    box-shadow: 0px 19px 13px #000a;
+}
+.card3:hover{
+    margin-top: -9px !important;
+    transition: all 0.3s ease;
+    box-shadow: 0px 19px 13px #000a;
+}
+}
+
+/* Footer & CopyRight */
+footer{
+    text-align: center;
+    height: 6rem;
+    margin-top: 7rem;
+    width: 100%;
+    margin-bottom: -18px;
+    background: linear-gradient(0deg , #363687fe , transparent);
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+footer{
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 10rem;
+}
+footer a{
+    margin-right: 4px;
+    margin-left: 4px;
+    text-decoration: none;
+    color: #ff4b0a;
+    font-size: 15px;
+    margin-top: 40px;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+/* Why Patra setting */
+.whyPatra{
+    width: 100%;
+    margin-top: -2rem;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  /* title */
+  .whyPatra h3 {
+    color: white;
+    font-family: ybFat;
+    font-size: 70px;
+    margin-bottom: 2px;
+  }
+  /* sub */
+  .whyPatra h4{
+    margin-bottom: 55px;
+    width: 60%;
+    text-align: center;
+    color: #a2adff;
+    direction: rtl;
+    font-family: ybBold;
+  }
+  .whyPatra a{
+    color: #ff4b0a;
+    text-decoration: none;
+  }
+  .whyPatra a:hover{
+    text-decoration: underline;
+  }

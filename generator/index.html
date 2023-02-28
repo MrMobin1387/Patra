@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پاترا جنریتور</title>
+    <link rel="shortcut icon" href="PatraLogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- This is the back button -->
+    <div class="back_btn">
+        <p id="back_text">بازگشت</p>
+        <a onmouseover="backHover()" onmouseout="backNotHover()" href="https://mrmobin1387.github.io/patra"><img src="arrow.png" alt="arrow"></a>
+    </div>
+
+    <!-- Hint Elements -->
+    <div class="info-hide" id="info">
+        <h3>پاترا جنریتور چگونه کار میکند؟</h3>
+        <p>
+            پاترا جنریتور یک ابزار کاملا رایگان مخصوص توسعه دهندگان وب سایت های  تجاری و شخصی میباشد .<br> برای استفاده از این ابزار کافیست تنظیمات مورد نظر را روی مستطیل اصلی اعمال کرده و<br> خروجی انرا به صورت کد سی اس اس در انتهای صفحه دریافت کنید.
+        </p>
+        <button class="info-close" onclick="closeInfo()">
+            بستن
+        </button>
+    </div>
+
+    <!-- Background swipe button -->
+    <div class="checkbg">
+        <input checked="checked" onchange="changeBG()" id="swipe" type="checkbox" class="swipe">
+        <h5>بک گراند</h5>
+    </div>
+
+    <!-- Title & sub -->
+    <header>
+        <h1>
+            پاترا جنریتور
+        </h1>
+        <sub>
+            تولید کننده کد های سی اس اس
+        </sub>
+        <span onclick="openInfo()">
+            ?
+        </span>
+    </header>
+
+    <!-- The main div + options -->
+    <div class="content" id="div">
+
+        <h2>تنظیمات عمومی</h2>
+        <hr>
+
+        <br>
+            <br>
+
+        <label for="opacity">تاری</label>
+        <br>
+        <input type="range" name="opacity" onchange="change()" value="100" id="opacity" min="6" max="100">
+
+        <br>
+            <br>
+
+        <label for="background">رنگ پس زمینه</label>
+        <br>
+        <input type="color" name="background" onchange="change()" id="background" value="#ffffff">
+        <br>
+            <br>
+            <br>
+        <br>
+        <h2>تنظیمات گوشه ها</h2>
+        <hr>
+        <br>
+            <br>
+        <label for="border">ضخامت گوشه ها </label>
+        <br>
+        <input type="range" name="border" onchange="change()" value="0" id="border" min="0" max="80">
+
+        <br>
+            <br>
+        <br>
+
+        <label for="border-rad">گردی گوشه ها</label>
+        <br>
+        <input type="range" name="border-rad" onchange="change()" value="25" id="border-rad" min="0" max="160">
+
+
+        <br>
+            <br>
+        <br>
+
+        <label for="border-color">رنگ گوشه ها</label>
+        <br>
+        <input type="color" name="border-color" onchange="change()" value="100" id="border-color" min="6" max="100">
+        <br>
+            <br>
+        <br>
+        <br>
+        <h2>تنظیمات سایه</h2>
+        <hr>
+        <br>
+            <br>
+        <label for="Yshadow">جهت افقی سایه</label>
+        <br>
+        <input type="range" name="Yshadow" onchange="change()" value="5" id="yshadow" min="-200" max="200">
+
+        <br>
+            <br>
+        <label for="Xshadow">جهت عمودی سایه</label>
+        <br>
+        <input type="range" name="Xshadow" onchange="change()" value="5" id="xshadow" min="-200" max="200">
+
+        <br>
+            <br>
+        <label for="blurshadow">شدت تاری سایه</label>
+        <br>
+        <input type="range" name="blurshadow" onchange="change()" value="15" id="blurshadow" min="0" max="110">
+
+        <br>
+            <br>
+        <label for="colorshadow">رنگ سایه</label>
+        <br>
+        <input type="color" name="colorshadow" onchange="change()" value="#7f2e6a" id="colorshadow">
+    <br>
+
+
+
+    </div>
+
+<!-- result area -->
+    <section>
+        <h2 id="result">کد مستطیل:</h2>
+        <hr id="hr-result">
+        <br>
+        <br>
+        <textarea name="code" id="code" cols="30" rows="10" disabled>
+div { 
+    box-shadow: 5px 5px 15px #00000065;
+    background-color: #fffffff1;
+    border-radius: 25px;
+    border: none;
+}
+
+        </textarea>
+<!-- Copy button -->
+        <button id="copy" onclick="copy()">کپی کردن</button>
+
+    </section>
+
+
+
+</body>
+<script src="script.js">
+
+</script>
+</html>
